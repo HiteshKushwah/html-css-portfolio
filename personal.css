@@ -46,6 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
   }
 
   header nav ul li{
@@ -54,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   header nav ul li a{
-    color: blue;
+    color:ghostwhite;
     font: bold;
     text-transform: uppercase;
     padding: -20px;
@@ -85,6 +86,7 @@ h1, h2, h3, h4, h5, h6 {
    padding: 5px;
    background-color:cadetblue;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   z-index: 900;
 
   }
 
@@ -99,6 +101,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 color: red;
+z-index: 999;
+
   }
 
 
@@ -108,7 +112,8 @@ color: red;
     border-style: dotted;
     border-radius: 15px;
     border-color: brown;
-
+    z-index: 900;
+position: relative;
 
   }
 
@@ -141,6 +146,7 @@ color: red;
   #projects{
     margin: 30px;
     background-color: aqua;
+    position: relative;
   }
 
   #projects h2{
@@ -164,4 +170,158 @@ color: red;
  font-size: 20px;
  
   }
+  
+  #contacts{
+    margin: 55px;
+    padding: 20px;
+    background-color: aquamarine;
+    border-style: double;
+    border-radius: 30px;
+
+  }
+
+  #contacts h2{
+    padding: 15px;
+    
+  }
+   form{
+    text-align: center;
+    flex-direction: column;
+    
+
+   }
+   form input, form textarea {
+    border-radius: 8px;
+    font-size: 1rem;
+    color: black;
+    background-color: cornflowerblue;
+
+
+    
+
+   }
+   form textarea {
+    resize: vertical;
+    min-height: 100px;
+    
+  }
+  form button{
+    background-color:beige;
+    border-style: groove;
+    border-radius: 10px;
+    font-size: 20px;
+    padding-bottom: 1px;
+    
+
+
+  }
+  form button:hover{
+  background-color: blanchedalmond;
+  }
+
+  footer{
+    margin: 55px;
+    background-color: darkturquoise;
+    text-align: center;
+
+  }
+  footer p {
+    margin: 35px;
+
+
+  }
+  footer a {
+    color: blue;
+    margin: 0 1rem;
+  }
+
+  footer a:hover {
+    color: #f4f4f4;
+  } 
+  
+  @media screen and (max-width: 767px) {
+    body {
+      background-color: lightpink;
+    }
+  
+    #skills ul li {
+      font-size: 14px;
+      background-color: lightyellow;
+    }
+  
+    header h1 {
+      font-size: 20px;
+      color: darkred;
+
+    }
+  }
+
+
+  
+  .name-tag {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 500;
+ 
+  }
+  .sticky{
+    margin: 35px;
+    
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    z-index: 600;
+    border-style: dotted;
+    border-radius: 30px;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+  background-color: red; 
+  background-image: linear-gradient(violet, red, yellow);
+  
+  }
+  .sticky:hover{
+    color: orange;
+    animation: alternate;
+  }
+  .relate{
+     margin: 50px;
+     background-color: azure;
+     color: red;
+     font-size: 50px;
+     font-weight: 100px;
+     position: relative;
+     top: 15px;
+     bottom: 50px;
+     right: 30px;
+     left: 30px;
+     
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/free-vector/close-up-piano-keys-with-music-sheet_1150-10735.jpg');
+
+
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  
+  
+
+
+
   
